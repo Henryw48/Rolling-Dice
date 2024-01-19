@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dice Rolling </title>
+    <link rel = "stylesheet" href = "styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <form>
+        <h1> Dice Roll </h1>
+        <label for="dicenum"> <h2>How many dices do you want to roll? (1-3):</h2></label><br>
+        <input type="text" min ="1" max = "3" id="dicenum" name="dicenum"><br>
+        <label for="rollcount"> <h2>How many times do you want the dice to roll? :</h2></label><br>
+        <input type="text" id="rollcount" name="rollcount">  
+    </form>
+
+    <img src = "./images/roll1.jpg" alt = "die1">
+    <img src = "./images/roll2.jpg" alt = "die2">
+    <img src = "./images/roll3.jpg" alt = "die3">
+    <img src = "./images/roll4.jpg" alt = "die4">
+    <img src = "./images/roll5.jpg" alt = "die5">
+    <img src = "./images/roll6.jpg" alt = "die6">
+
+    <button type = "button1" onclick = "rollDice()">ROLL!</button>
+    <button type = "button2" onclick = "clear()">CLEAR!</button>
+
+    <table>
+        <tr>
+            <th>Ones</th>
+            <th>Twos</th>
+            <th>Threes</th>
+            <th>Fours</th>
+            <th>Fives</th>
+            <th>Sixes</th>
+        </tr>
+        <tr>
+            <td id = count1></td>
+            <td id = count2></td>
+            <td id = count3></td>
+            <td id = count4></td>
+            <td id = count5></td>
+            <td id = count6></td>
+        </tr>
+    </table>
+
+    <h1>RESULTS</h1>
+    <p id = "meanR"></p>
+    <p id = "medianR"></p>
+    <p id = "modeR"></p>
+
+</body>
+</html>
+
+
